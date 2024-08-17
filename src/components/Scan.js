@@ -88,7 +88,7 @@ function BarcodeScanner() {
       setScanResult(code);
       Quagga.stop();
       console.log("Barcode detected: ", code);
-      axios.post('http://localhost:8080/api/absen', {
+      axios.post('http://139.59.218.121:8080/api/absen', {
         id_isc: code,
         status: 'Hadir',
       })

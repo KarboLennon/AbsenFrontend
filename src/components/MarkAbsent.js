@@ -25,7 +25,7 @@ function MarkAbsent({ peminatan }) {
   };
 
   const handleMarkAbsent = () => {
-    axios.post('http://159.223.74.201:8080/api/mark_absent', { students: selectedStudents, pertemuan: 1 }) // Ganti pertemuan sesuai kebutuhan
+    axios.post('http://139.59.218.121:8080/api/mark_absent', { students: selectedStudents, pertemuan: 1 }) // Ganti pertemuan sesuai kebutuhan
       .then(response => {
         alert('Mahasiswa telah ditandai sebagai Tidak Hadir');
       })

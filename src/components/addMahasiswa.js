@@ -27,7 +27,7 @@ function AddMahasiswa() {
       peminatan: peminatan,
     };
 
-    axios.post('http://159.223.74.201:8080/api/mahasiswa', newMahasiswa, {
+    axios.post('http://139.59.218.121:8080/api/mahasiswa', newMahasiswa, {
       headers: {
         'Authorization': localStorage.getItem('token'),
       }

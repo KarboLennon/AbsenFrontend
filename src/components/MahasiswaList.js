@@ -8,7 +8,7 @@ function MahasiswaList() {
   const { user } = useAuth(); // Mengambil informasi pengguna dari useAuth
 
   useEffect(() => {
-    axios.get('http://159.223.74.201:8080/api/mahasiswa')
+    axios.get('http://139.59.218.121:8080/api/mahasiswa')
       .then(response => {
         setMahasiswaList(response.data);
       })

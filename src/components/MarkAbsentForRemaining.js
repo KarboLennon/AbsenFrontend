@@ -13,7 +13,7 @@ function MarkAbsentForRemaining() {
   useEffect(() => {
     if (pertemuan && peminatan) {
       // Hitung berapa banyak mahasiswa yang belum ditandai sebagai hadir
-      axios.get(`http://159.223.74.201:8080/api/absen/count_absent?pertemuan=${pertemuan}&peminatan=${peminatan}`)
+      axios.get(`http://139.59.218.121:8080/api/absen/count_absent?pertemuan=${pertemuan}&peminatan=${peminatan}`)
         .then(response => {
           if (response.data && typeof response.data.absentCount === 'number') {
             setAbsentCount(response.data.absentCount);

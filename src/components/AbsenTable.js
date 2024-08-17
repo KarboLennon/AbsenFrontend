@@ -11,13 +11,13 @@ function AbsenTable({ peminatan }) {
 
   useEffect(() => {
     // Fetch all students by peminatan
-    axios.get('http://159.223.74.201:8080/api/mahasiswa')
+    axios.get('http://139.59.218.121:8080/api/mahasiswa')
       .then(response => {
         const filteredMahasiswa = response.data.filter(mahasiswa => mahasiswa.peminatan === peminatan);
         setMahasiswaList(filteredMahasiswa);
 
         // Fetch absensi data
-        return axios.get('http://159.223.74.201:8080/api/absen');
+        return axios.get('http://139.59.218.121:8080/api/absen');
       })
       .then(response => {
         const absensiData = response.data || []; // Pastikan response.data tidak null
