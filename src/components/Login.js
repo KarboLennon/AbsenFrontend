@@ -11,7 +11,7 @@ function Login() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    axios.post('139.59.218.121:8080/api/login', {
+    axios.post('http://139.59.218.121:8080/api/login', {
       username,
       password,
     }).then((response) => {
